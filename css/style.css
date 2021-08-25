@@ -49,13 +49,12 @@ button {
   }
 }
 
-.section-title{
+.section-title {
   flex: 0 0 100%;
-  max-width: 100%; 
+  max-width: 100%;
   margin-bottom: 40px;
-
 }
-.section-title h1{
+.section-title h1 {
   display: inline-block;
   font-size: 50px;
   color: #000000;
@@ -63,8 +62,8 @@ button {
   margin: 0;
   position: relative;
 }
-.section-title h1::before{
-  content: '';
+.section-title h1::before {
+  content: "";
   box-sizing: border-box;
   position: absolute;
   left: 0;
@@ -72,10 +71,9 @@ button {
   width: 100px;
   height: 3px;
   background-color: #ff9800;
-
 }
-.btn-01{
-  background-color:#ff9800;
+.btn-01 {
+  background-color: #ff9800;
   color: #ffffff;
   border: 2px solid transparent;
   padding: 10px 35px;
@@ -85,7 +83,15 @@ button {
   font-size: 16px;
   font-weight: 600;
   display: inline-block;
-
+  transition: all 0.5s ease;
+}
+.btn-01:hover {
+  background-color: transparent;
+  border-color: #ff9800;
+  color: #ff9800;
+}
+.btn-01:focus {
+  outline: none;
 }
 /* Header */
 .header {
@@ -241,6 +247,18 @@ button {
   max-width: 33.33%;
   padding: 0 15px;
 }
+.about-section .about-img .img-box{
+  position: relative;
+}
+.about-section .about-img .img-box .shape-02 {
+  position: absolute;
+  height: 35px;
+  width: 35px;
+  border: 2px solid #ff9800;
+  left: 30px;
+  top: 30px;
+  animation: ani01 3s linear infinite;
+}
 .about-section .about-img .img-box img {
   width: 100%;
   display: block;
@@ -249,56 +267,35 @@ button {
   flex: 0 0 66.66%;
   max-width: 66.66%;
   padding: 0 15px;
-
 }
-.about-section .section-title{
+.about-section .section-title {
   margin-bottom: 30px;
-
 }
-.about-section .about-content p{
+.about-section .about-content p {
   font-size: 16px;
   color: #555555;
   line-height: 26px;
   margin: 0;
 }
-.about-section .about-content .stats .stat-box{
+.about-section .about-content .stats .stat-box {
   flex: 0 0 25%;
   max-width: 25%;
   padding: 0 15px;
   text-align: center;
-  margin-top:30px;
-
+  margin-top: 30px;
 }
 
-.about-section .about-content .stats .stat-box h2{
+.about-section .about-content .stats .stat-box h2 {
   font-size: 40px;
   color: #000000;
   margin: 0 0 5px;
 }
-.about-section .about-content .stats .stat-box h5{
+.about-section .about-content .stats .stat-box h5 {
   font-size: 16px;
   color: #555555;
   font-weight: 600;
   text-transform: uppercase;
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.about-section .about-content .btn{
+  margin-top: 60px; 
+}
