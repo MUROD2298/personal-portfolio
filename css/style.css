@@ -352,7 +352,7 @@ button {
 }
 /* work section */
 .work-section {
-  padding: 50px 0 80px;
+  padding: 50px 0 0;
 }
 .work-section .work-item {
   flex: 0 0 33.33%;
@@ -415,9 +415,16 @@ button {
   align-items: center;
   justify-content: center;
   cursor: zoom-out;
+  display: none;
 }
+.lightbox.open{
+  display: flex;
+
+}
+
+
 .lightbox .lightbox-img {
-  max-height: 700px;
+  /* max-height: 700px; */
   display: flex;
   width: auto;
   height: auto;
@@ -432,7 +439,7 @@ button {
 .lightbox .lightbox-close {
   height: 30px;
   width: 30px;
-  background-color: blue;
+  /* background-color: blue; */
   display: block;
   position: absolute;
   right: 0;
@@ -460,9 +467,9 @@ button {
 .lightbox .lightbox-controls .prev,
 .lightbox .lightbox-controls .next {
   position: absolute;
-  height: calc(100%-80px);
+  height:80%;
   top: 40px;
-  background-color: blue;
+  /* background-color: blue; */
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -484,4 +491,65 @@ button {
 .lightbox .lightbox-controls .next img {
   width: 30px;
   height: 30px;
+  padding: 5px;
+  border-radius:2px ;
+  transition: all 0.5s ease;
 }
+.lightbox .lightbox-controls .prev:hover img,
+.lightbox .lightbox-controls .next:hover img{
+ background-color:rgba(0,0,0,0.5);
+
+} 
+
+/* contact-section */
+
+.contact-section{
+  padding: 50px 0 80px;
+}
+.contact-section .contact-img{
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 0 15px;
+}
+.contact-section .contact-img .img-box{
+  /* background-color:red; */
+  padding: 200px 0;
+  background-image: url('../img/contact-bg.jpg');
+  background-size:cover;
+  background-position: center;
+}
+
+.contact-section .section-title{
+  text-align: center;
+}
+
+.contact-section .section-title h1{
+  color: #ffffff;
+}
+
+.contact-section .section-title h1::before{
+  background-color: #ffffff;
+  left: 50%;
+  margin-left: -40px;
+}
+
+.contact-section .contact-form{
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 0 65px;
+}
+.contact-section .contact-form .form{
+ border: 1px solid red;
+ background-color: #f3f2f1;
+  padding: 55px 40px;
+  margin-top: -150px;
+}
+
+.contact-section .contact-form .form .input-group{
+  flex: 0 0 100%;
+  max-width: 100%;
+
+}
+
+.contact-section .contact-form .form .input-group .{
+
