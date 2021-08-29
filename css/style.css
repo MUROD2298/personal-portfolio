@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap");
 
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 
 body {
   margin: 0;
@@ -101,6 +101,11 @@ button {
   width: 100%;
   padding: 30px 0;
   z-index: 99;
+  transition: all 0.5s ease;
+}
+.header .fixed{
+  background-color: #ffffff;
+  position: fixed;
 }
 .header .brand-name {
   /* background-color: red; */
@@ -539,17 +544,115 @@ button {
   padding: 0 65px;
 }
 .contact-section .contact-form .form{
- border: 1px solid red;
- background-color: #f3f2f1;
+ /* border: 1px solid red; */
+ background-color: #ffffff;
   padding: 55px 40px;
   margin-top: -150px;
 }
-
-.contact-section .contact-form .form .input-group{
+.contact-section .contact-form .form label{
+  color: #000000;
+  font-weight: 500;
+  display: block;
+  margin: 0 0 5px;
+}
+.contact-section .contact-form .form .input-group {
   flex: 0 0 100%;
   max-width: 100%;
+  padding: 0 15px;
+  margin-bottom: 30px;
 
 }
 
-.contact-section .contact-form .form .input-group .{
+.contact-section .contact-form .form .left ,
+.contact-section .contact-form .form .right  {
+  flex: 0 0 50%;
+  max-width:50%;
+}
+.contact-section .contact-form .form .input-control{
+  width: 100%;
+  height: 40px;
+  padding: 6px 0px;
+  color: #000000;
+  font-size: 16px;
+  background-color:transparent;
+  border: none;
+  border-bottom: 1px solid #cccccc;
+}
+.contact-section .contact-form .form .input-control:focus{
+  outline: none;
+}
+
+.contact-section .contact-form .form textarea.input-control{
+  height: 140px;
+  resize: none;
+  padding: 12px;
+}
+.contact-section .contact-form .form  .form-btn{
+  text-align: center;
+}
+.contact-section .contact-info{
+  flex: 0 0 33.33%;
+  max-width: 100%;
+  text-align: center;
+  padding:0 15px ;
+}
+
+.contact-section .contact-info .info-item{
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+
+  /* background-color: red; */
+  /* padding:0 5px; */
+
+}
+
+.contact-section .contact-info .info-item h5{
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+
+}
+.contact-section .contact-info .info-item p{
+  font-size: 16px;
+  margin: 0;
+  color:#555555;
+
+}
+
+.contact-section .social-links{
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 0 15px;
+  text-align: center;
+  /* background-color: red; */
+}
+.contact-section .social-links a{
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 5px;
+}
+.contact-section .social-links a img{
+  width: 30px;
+  display: block;
+  transition: all 0.5s ease;
+}
+
+.contact-section .social-links a:hover img{
+   opacity:0.5;
+}
+.copyright{
+  text-align: center;
+  padding: 25px 15px;
+  color: #555555;
+  font-size: 16px;
+  /* background-color:red; */
+  border-top:1px solid #c5c5c5;
+  
+}
+
+
+
+
 
